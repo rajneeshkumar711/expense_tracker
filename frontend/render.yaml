@@ -1,0 +1,11 @@
+services:
+  - type: static
+    name: react-expense-tracker
+    env: node
+    region: oregon
+    plan: free
+    branch: main
+    rootDir: ./
+    buildCommand: npm install -f && npm run build
+    publishPath: build
+    autoDeploy: false
